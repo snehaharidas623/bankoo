@@ -1,0 +1,19 @@
+<div class="container w-75 ">
+    <h1 class="text-center">transction history</h1>
+    <table class="border border-white w-75">
+        <thead>
+            <th class="text-center">type</th>
+            <th class="text-center">amount</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of transaction">
+                <td class="text-center">{{i.type}}</td>
+                <td class="text-center">{{i.amount}}</td>
+    
+            </tr>
+           
+    
+    
+        </tbody>
+    </table>
+</div>

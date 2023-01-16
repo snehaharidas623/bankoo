@@ -1,0 +1,38 @@
+ <h1>welcome {{user}}</h1>
+ <a  routerLink="/transaction" style="color: white;" href="">VIEW TRANSACTION HISTORY</a>
+<form (ngSubmit)="deposite()" [formGroup]="depositeForm">
+    <div class="container   mt-3 p-3 "></div>
+    <h1 class="text-center text-black">DEPOSITE</h1>
+    <div class="mt-2 p-2 text-center">
+        <input type="text" name="acno" formControlName="acno" id="acno"  placeholder="ACNTNO">
+    </div>
+    <div class="mt-2 p-2 text-center">
+        <input type="password" name="psw" id="psw"  formControlName="psw" placeholder="PASWRD">
+    </div>
+    
+    <div class="mt-2 text-center p-2">
+        <input type="text" name="amnt"  id="amnt" formControlName="amnt" placeholder="AMOUNT">
+    </div>
+    <div class="text-center mt-2 p-2">
+        <button type="submit"  class="btn btn-success">deposite</button>
+    </div>
+</form>
+
+<form (ngSubmit)="withdraw()" [formGroup]="withdrawForm"> 
+    <div class="container   mt-3 p-3 "></div>
+    <h1 class="text-center text-black">WITHDRAW</h1>
+    <div class="mt-2 p-2 text-center">
+        <input type="text" name="acno1" id="acno1" formControlName="acno1" placeholder="ACNTNO">
+    </div>
+    <div class="mt-2 p-2 text-center">
+        <input type="password" name="psw1" id="psw1" formControlName="psw1" placeholder="PASWRD">
+    </div>
+    
+    <div class="mt-2 text-center p-2">
+        <input type="text" name="amnt1"  id="amnt1" formControlName="amnt1" placeholder="AMOUNT">
+    </div>
+    <div class="text-center mt-2 p-2">
+        <button type="submit" 
+         class="btn btn-success">withdraw</button>
+    </div>
+</form>

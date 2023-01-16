@@ -1,0 +1,15 @@
+<h1 style="color: antiquewhite; font-weight: 200px;">{{aim}}</h1>
+<form (ngSubmit)="login()" [formGroup]="loginForm">
+    <div class="container   mt-3 p-3 "></div>
+    <h1 class="text-center text-white">Login Page</h1>
+    <div class="mt-2 p-2 text-center">
+        <input type="text" name="acno" id="acid" formControlName="acno" [placeholder]="data">
+    </div>
+    <div class="mt-2 text-center p-2">
+        <input type="password"name="psw"  [(ngModel)]="psw" formControlName="psw"   id="pid" placeholder="Password">
+    </div>
+    <div class="text-center mt-2 p-2">
+        <button type="submit"  class="btn btn-success">Login</button>
+        <p class="text-white">new user? <a routerLink="register" style="color: blue;" href="">Register here</a></p>
+    </div>
+</form>
